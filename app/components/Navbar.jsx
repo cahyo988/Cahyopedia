@@ -1,14 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import cahyopedia from "../../public/assets/cahyopedia.png"
-import { FaStore, FaUser } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import { CiBellOn, CiShoppingCart } from 'react-icons/ci';
 import { PiEnvelopeSimpleThin } from "react-icons/pi";
-
+import { FcShop } from "react-icons/fc";
 
 const Navbar = () => {
   return (
-    <nav className='px-10 py-4 border-b border-gray-200'>
+    <nav className='px-10 py-4 border-b border-gray-200 sticky'>
       <div className='flex gap-5 items-center'>
         <Image src={cahyopedia} width={150} height={250} alt="Cahyopedia logo" />
         <h5 className='flex items-center'>
@@ -32,7 +32,7 @@ const Navbar = () => {
           <a href="" className='flex items-center gap-1 hover:text-green-600'><PiEnvelopeSimpleThin className='w-7 h-7' /></a>
         </div>
         <div className='flex items-center ms-auto gap-10 mr-16'>
-          <a href="" className='flex items-center gap-1 hover:text-green-600'><FaStore className='w-5 h-5' /> Toko</a>
+          <a href="" className='flex items-center gap-1 hover:text-green-600'><FcShop className='w-5 h-5' /> Toko</a>
           <a href="" className='flex items-center gap-1 hover:text-green-600'><FaUser className='w-5 h-5' /> Cahyo</a>
         </div>
       </div>

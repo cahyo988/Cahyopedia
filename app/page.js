@@ -1,7 +1,9 @@
 import Category from "./components/Category";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar"
+import Product from "./components/Product";
 import { GiSmartphone } from "react-icons/gi";
+import Chat from "./components/Chat"
 
 export default function Home() {
   return (
@@ -33,6 +35,9 @@ export default function Home() {
       < Navbar />
       < Hero />
       < Category />
+      < Product />
+      < Chat />
+    
 
     </div>
   )
